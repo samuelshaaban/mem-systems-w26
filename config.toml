@@ -1,0 +1,21 @@
+base_url = "https://khale.github.io/mem-systems-w26"
+compile_sass = true
+build_search_index = false
+
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+title = "CS/ECE 4/599"
+
+[markdown]
+highlight_code = true
+highlight_theme = "subway-madrid"
+smart_punctuation = true
+
+[extra]
+favicon = "/img/favicon.ico"
+bigicon = "/img/favicon152.png"
+
+[[extra.links]]
+name = "Discussions"
+url = "https://github.com/khale/mem-systems-w26/discussions"

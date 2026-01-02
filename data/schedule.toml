@@ -1,0 +1,78 @@
+[[days]]
+date = "January 5"
+month = true
+mon = true
+
+[[days]]
+date = "January 7"
+
+[[days]]
+date = "January 12"
+mon = true
+
+[[days]]
+date = "January 14"
+
+[[days]]
+date = "January 19"
+mon = true
+canceled = true
+event = "MLK Day"
+
+[[days]]
+date = "January 21"
+
+[[days]]
+date = "January 26"
+mon = true
+
+[[days]]
+date = "January 28"
+
+[[days]]
+date = "February 2"
+mon = true
+month = true
+
+[[days]]
+date = "February 4"
+
+[[days]]
+date = "February 9"
+mon = true
+
+[[days]]
+date = "February 11"
+
+
+[[days]]
+date = "February 16"
+mon = true
+
+[[days]]
+date = "February 18"
+
+[[days]]
+date = "February 23"
+mon = true
+
+[[days]]
+date = "February 25"
+
+[[days]]
+date = "March 2"
+mon = true
+month = true
+
+[[days]]
+date = "March 4"
+
+[[days]]
+date = "March 9"
+mon = true
+
+[[days]]
+date = "March 11"
+event = "Final Project Presentations"
+canceled = true
+notes = ["Due @ 2PM: [Project](../syllabus/#project)."]
