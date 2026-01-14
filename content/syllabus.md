@@ -74,7 +74,7 @@ systems building and coding. This can be any open-ended and open-source project 
 is related to memory systems. This could involve OS, compiler, hardware, and programming language work. 
 The final product is a blog post, your code, and a presentation. 
 
-You can either work individually or in groups with up to 2-3 people. 
+You can either work individually or in groups with up to 4-5 people. 
 
 #### Proposal 
 
