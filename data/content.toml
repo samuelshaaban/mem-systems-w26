@@ -38,6 +38,7 @@ lesson = 5
 title = "Hardware: Caches"
 leader = "Lab 3: Thomas Pinon"
 readings = ["rrip"]
+paper_slides = "https://canvas.oregonstate.edu/courses/2028992/files/116127372?module_item_id=26489988"
 
 [[classes]]
 lesson = 6
