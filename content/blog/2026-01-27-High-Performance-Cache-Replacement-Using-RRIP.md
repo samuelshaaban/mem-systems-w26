@@ -3,8 +3,7 @@ title = "High Performance Cache Replacement Using Re-Reference Interval Predicti
 [extra]
 bio = """ """
 [[extra.authors]]
-name = " Thomas Pinon (Leader / Presentor)"
-[[extra.authors]]
+name = "Thomas Pinon (Leader / Presentor)"
 [[extra.authors]]
 name = "Eric Morgan (scribe)"
 [[extra.authors]]
@@ -115,5 +114,4 @@ The RRIP framework illustrates that cache replacement policies can be both simpl
 
 # Generative AI Disclosure
 * ChatGPT was used to generate a Markdown file template and check spelling and grammar.
-
 * Generative AI can be useful tools for tasks such as summarizing or drafting, however, they may give innacurate information confidently and should always have generated information validated
