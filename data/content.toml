@@ -96,6 +96,7 @@ title = "Serverless"
 leader = "Lab 2: James Tappert"
 readings = ["memento"]
 paper_slides = "https://canvas.oregonstate.edu/courses/2028992/files/116618804?module_item_id=26535280"
+blog_link = "../blog/memento"
 
 [[classes]]
 lesson = 14
