@@ -53,7 +53,7 @@ The researchers evaluated Pond using a mix of lab experiments and large-scale si
 Pond's evaluation yielded several compelling findings.
 
 ## Cost Savings
-By pooling memory across 8-16 sockets, Pond achieved a 7-9% reduction in overall DRAM requirements, which translates to a massive 3.5% reduction in total cloud hardware costs. Larger pool sizes provided diminishing returns and incurred higher latency penalties. In contrast, scaling up to 64 sockets yeilded 13% savings but doing so required CXL switches that pushed access latencies byeond 270ns.
+By pooling memory across 8-16 sockets, Pond achieved a 7-9% reduction in overall DRAM requirements, which translates to a massive 3.5% reduction in total cloud hardware costs. Larger pool sizes provided diminishing returns and incurred higher latency penalties. In contrast, scaling up to 64 sockets yeilded 13% savings but doing so required CXL switches that pushed access latencies beyond 270ns.
 
 ## Performance
 The ML prediction model achieves 7-9% saving by pooling by successfully identifying 25% of untouched memory across the fleet while only overpredicting for 4% of VMs.
@@ -80,3 +80,4 @@ Pond represents a major step forward in cloud infrastructure, demonstrating that
 
 # AI Disclosure
 - Gemini to help summarize paper and scribe notes.
+
