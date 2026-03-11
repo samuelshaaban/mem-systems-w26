@@ -29,6 +29,9 @@ The system showed promising results, displaying clear memory tiers that we could
 ![Bandwidth Benchmark](./bandwidth.png)
 ![Latency Benchmark](./latency.png)
 
+# Application Specific Benchmark
+For this tiered hierarchy we decided to test on a workload that would access memory from the GPU when CPU was full. We limited the CPU capacity to keep only 2GB in system RAM. We generated three different .csv files of sizes 6 GB, 10 GB, and 14 GB. These contained millions of data points that were randomized sensor data. The data included a timestamp, altitude, airpseed, pitch, roll, yaw, temperature, and pressure. We would sort this list by one column, moving a whole row at a time to keep the data together. This would then be written to an output file for validation. 
+
 # Benchmark Results
 
 **6GB Benchmark**
@@ -49,6 +52,12 @@ It is very unlikely this is a good idea financially. A graphics processor has an
 ![Price Breakdown](./costs.png)
 
 The KIOXIA drive is more expensive per gigabyte due to the increased read speed. The MSI Spatium has a maximum read speed of 7400 MB/s and a maximum write speed of 7000 MB/s. The KIOXIA CM7-V has a maximum read speed of 14,000 MB/s and a write speed of 7,000 MB/s. The WD\_BLACK drive is put in as a price comparison to the GeForce GTX 1650 used for testing, showing that the price per gigabyte is far smaller when using NAND Flash. Obviously through these tests we prove that there is a smaller latency profile when using GPU as a tiered memory device but along with this the price per GB is significantly worse than any of the alternatives (even DRAM).
+
+# What was hardest to get right?
+We struggled the most to find a workload that could actually benefit from this increase in bandwidth. Larger transfers would always perform better on the GPU memory than SWAP, but smaller transfers were more similar in time. Additionally, we struggled a lot with using CUDA and keeping the memory organized throughout the project as a whole. Getting the system to not segmentation fault was one of the hardest tasks we encountered. Unified Virtual Memory was also a bit of a struggle point for us, as a copy of the memory would stay residing in system RAM instead of being moved fully to the GPU. To resolve this we eventually moved back to cudaMemcpy() which resulted in more complex data access.
+
+# What was surprising?
+Seeing the performance that this had was surprising to us as we expected the performance of the GPU memory to be worse due to the limitations of CUDA and the PCIe link we were using. Additionally we were surprised by how well swap actually can perform.
 
 # Were we successful?
 A GPU can function as a far memory tier for a system and it does provide some added benefits. The performance sits right between DRAM and SWAP/Disk. We believe that the cost of this implementation is too high for the performance gains measured. An alternate solution could be CXL or adding more RAM to the system.
